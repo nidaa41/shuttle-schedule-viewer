@@ -1,0 +1,18 @@
+{
+  "name": "shuttle_viewer",
+  "version": "1.0.0",
+  "description": "\"Transportation and shuttle schedule viewer.\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nida",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mongodb": "^6.18.0",
+    "mysql2": "^3.14.2"
+  }
+}

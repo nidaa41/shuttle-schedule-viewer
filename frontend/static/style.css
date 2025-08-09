@@ -1,0 +1,312 @@
+/* Home Page */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home-page {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+main {
+    margin: 20px;
+}
+
+/* Navbar */
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #c7d7df;
+}
+
+/* Buttons */
+button {
+    margin-top: 20px;
+    padding: 5px;
+    height: 45px;
+    width: 10%;
+    border-radius: 25px;
+    border: none;
+    background-color:#005580;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+button:hover {
+    opacity: 80%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* Heading */
+h1 {
+    margin-top: 25px;
+    padding-bottom: 10px;
+    color:#003366;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    padding: 6px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+/* Stop Display */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e0f7fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #00796b;
+    border-radius: 4px;
+}
+
+/* Schedule Display */
+#schedule-view {
+    background-color: #fff8e1;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 5px solid #fbc02d;
+    border-radius: 4px;
+}
+
+h2, h3 {
+    margin-top: 30px;
+    color: #00796b;
+}
+
+/* LOGIN PAGE */
+
+#login-panel {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+}
+
+.login-page {
+    margin-top: 10vh;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-page h2 {
+    margin-bottom: 50px;
+}
+
+.email {
+    display: flex;
+    gap: 6px;
+}
+
+.password {
+    display: flex;
+    width: 99%;
+    gap: 4px;
+}
+
+/* Login button */
+.login-page button{
+    width: 30%;
+    height: 40px;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+/* Admin Panel */
+.admin-panel {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+
+.admin-heading {
+    text-align: center;
+    color: #003366;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .edit {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .admin-heading {
+        font-size: small;
+        justify-content: space-evenly;
+    }
+
+    #dropdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #log-out {
+        font-size: smaller;
+        min-width: 80px;
+    }
+}
+
+/* ADMIN DASHBOARD */
+
+.admin-dashboard * {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-dashboard {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    height: 700px;
+}
+
+.admin-heading {
+    background-color: #c7d7df;
+    color:#003366;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+}
+
+/* Log out Button */
+#log-out {
+    width: 10%;
+}
+
+/* Admin Dropdown */
+#dropdown {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#route-select {
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#dropdown label {
+    margin-top: 5px;
+}
+
+/* Save Button */
+.save-btn {
+    width: 25%;
+    float: right;
+}
+
+#save {
+    width: 100%;
+}
+
+/* Edit Schedules */
+#weekday, #weekend, #special {
+    width: 100%;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#schedule-form {
+    height: 45vh;
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Stops Display */
+#stops-form {
+    height: 70%;
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading Animation */
+.loader {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #333;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.load {
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

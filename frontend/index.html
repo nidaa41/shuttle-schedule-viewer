@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shuttle Viewer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="home-page">
+    <!-- Heading -->
+    <div class="navbar">
+        <h1>Campus Shuttle Schedule Viewer</h1>
+        <button onclick="location.href='/login.html'">Admin Login</button>
+    </div>
+    
+    <main>
+        <!-- Dropdown -->
+         <div class="dropdown">
+            <label for="route-select">Choose a Route:</label>
+            <select id="route-select">
+                <option selected disabled>Loading routes...</option>
+            </select>
+        </div>
+
+        <!-- Stops -->
+        <h2>Stops</h2>
+        <ul id="stops-list"></ul>
+
+        <!-- Schedule -->
+        <h2>Schedule</h2>
+        <div id="schedule-view"></div>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
